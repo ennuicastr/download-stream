@@ -8,6 +8,7 @@ dist/download-stream.js: src/download-stream.js
 	./browserify-build.js > $@
 
 dist/ecdssw.js: src/download-stream.js
+	mkdir -p dist
 	cp src/service-worker.js $@
 
 src/download-stream.js: src/*.ts node_modules/.bin/uglifyjs
