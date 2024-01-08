@@ -5,8 +5,8 @@
   "main": "src/download-stream.js",
   "types": "src/download-stream.ts",
   "exports": {
-    "browser": "dist/download-stream.min.js",
-    "default": "src/download-stream.js"
+    "browser": "./dist/download-stream.min.js",
+    "default": "./src/download-stream.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
