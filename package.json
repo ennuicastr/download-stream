@@ -4,10 +4,6 @@
   "description": "Download a ReadableStream as a file",
   "main": "src/download-stream.js",
   "types": "src/download-stream.ts",
-  "exports": {
-    "browser": "./dist/download-stream.min.js",
-    "default": "./src/download-stream.js"
-  },
   "scripts": {
     "build": "make",
     "test": "echo \"Error: no test specified\" && exit 1"
