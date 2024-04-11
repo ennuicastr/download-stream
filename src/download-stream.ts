@@ -53,7 +53,7 @@ async function swPostMessage(msg: any): Promise<any> {
     serviceWorkerPort.postMessage(msg);
 
     return await new Promise((res, rej) => {
-        const timeout = setTimeout(() => rej(new Error("Timeout")), 5000);
+        const timeout = setTimeout(() => rej(new Error("Timeout")), 30000);
         callbacks[no] = x => {
             clearTimeout(timeout);
             res(x);
