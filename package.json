@@ -1,6 +1,6 @@
 {
   "name": "@ennuicastr/dl-stream",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Download a ReadableStream as a file",
   "main": "src/download-stream.js",
   "types": "src/download-stream.ts",
