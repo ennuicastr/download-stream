@@ -73,9 +73,7 @@ export async function load(opts: {
     const sw = opts.sw || "ecdssw.min.js";
 
     try {
-        if (navigator.serviceWorker &&
-            (navigator.userAgent.indexOf("Safari") < 0 ||
-             navigator.userAgent.indexOf("Chrome") >= 0)) {
+        if (!!navigator.serviceWorker) {
             let swr = await navigator.serviceWorker.getRegistration(scope);
 
             if (!swr || !swr.active) {
